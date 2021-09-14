@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviasales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="Logo.png">
+    </div>
+<div class="content">
+<!-- Фильтер количество пересадок -->
+<div class="filter_transplants">
+    <div class="filter_h3">
+        <h3>
+            количество пересадок
+        </h3>
+    </div>
+    <div class="conteiner_box_checkbox">
+        <div class="box_checkbox">
+            <input class="checkbox_input" type="checkbox" id="checkbox_all" checked>
+            <label class="checkbox_label checkbox_all_label" for="checkbox_all">Все</label>
+        </div>
+        <div class="box_checkbox">
+            <input class="checkbox_input" type="checkbox" id="checkbox_without" checked>
+            <label class="checkbox_label" for="checkbox_without">Без пересадок</label>
+        </div>    
+        <div class="box_checkbox">
+            <input class="checkbox_input" type="checkbox" id="checkbox_one" checked>
+            <label class="checkbox_label" for="checkbox_one">1 пересадка</label>
+        </div>
+        <div class="box_checkbox">
+            <input class="checkbox_input" type="checkbox" id="checkbox_two" checked>
+            <label class="checkbox_label" for="checkbox_two">2 пересадки</label>
+        </div>
+        <div class="box_checkbox">
+            <input class="checkbox_input" type="checkbox" id="checkbox_three" checked>
+            <label class="checkbox_label" for="checkbox_three">3 пересадки</label>
+        </div>
+    </div> 
+</div>
+<!-- правая сторона -->
+<div class="main_content">
+<!--  КНОПКИ ФИЛЬТРЫ   -->
+    <div class="filter_menu">
+    <!-- САМЫЙ ДЕШЕВЫЙ -->
+
+        <div class="radio_buttons">
+        <label class="custom_radio">
+            <input type="radio" name="radio" >
+                <span class="radio_btn radio_btn_cheap">
+                    <div class="radio_line">
+                        <span>самый дешевый</span>
+                    </div>
+                </span>
+        </label>
+        </div>
+    
+        <!--  САМЫЙ БЫСТРЫЙ-->
+    
+            <div class="radio_buttons">
+            <label class="custom_radio">
+                <input type="radio" name="radio">
+                    <span class="radio_btn radio_btn_fast">
+                        <div class="radio_line">
+                            <span>самый быстрый</span>
+                        </div>
+                    </span>
+            </label>
+            </div>
+    <!--ОПТИМАЛЬНЫЙ  -->
+        <div class="radio_buttons">
+        <label class="custom_radio">
+            <input type="radio" name="radio" checked>
+                <span class="radio_btn radio_btn_optimal">
+                    <div class="radio_line">
+                        <span>оптимальный</span>
+                    </div>
+                </span>
+        </label>
+        </div>
+    </div>
+<!-- Бокс рейса -->
+<div class="box_flight">
+    <div class="price_and_logo"> 
+        <div class="price">
+            <h1>13400</h1>
+        </div>
+        <div class="flight_logo">
+            <img src="S7Logo.svg">
+        </div>
+    </div>
+<!-- первый контейнер с рейсами -->
+<div class="one_flight">
+<!-- БЛОК ОТКУДА КУДА -->
+    <div class="box_a-b">
+        <div class="a-b first_line">   
+            <span>mow-hkt</span>
+        </div>
+        <div class="a-b_time second_line">
+            <span >10:45-08:00</span>
+        </div>
+    </div>
+<!-- ВРЕМЯ ПУТИ-->
+    <div class="box_way">
+        <div class="way first_line">   
+            <span>в пути</span>
+        </div>
+        <div class="way_time second_line">
+            <span >21ч 15м</span>
+        </div>
+    </div>
+<!-- ПЕРЕСАДКИ  -->
+    <div class="box_transplants">
+        <div class="transplants first_line">   
+            <span>2 пересадки</span>
+        </div>
+        <div class="transplants_time second_line">
+            <span >HKG,JNB</span>
+        </div>
+    </div>
+</div>
+<!-- второй контейнер с рейсами  -->
+<div class="second_flight">
+<!-- ОТКУДА ДО КУДА -->
+    <div class="box_a-b">
+        <div class="a-b first_line">   
+            <span>mow-hkt</span>
+        </div>
+        <div class="a-b_time second_line">
+            <span >11:20-00:50</span>
+        </div>
+    </div>
+<!-- ВРЕМЯ ПУТИ-->
+    <div class="box_way">
+        <div class="way first_line">   
+            <span>в пути</span>
+        </div>
+        <div class="way_time second_line">
+            <span >13ч 30м</span>
+        </div>
+    </div>
+<!-- ПЕРЕСАДКИ  -->
+    <div class="box_transplants">
+        <div class="transplants first_line">   
+            <span>1 пересадки</span>
+        </div>
+        <div class="transplants_time second_line">
+            <span >HKG</span>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="box_flight">
+    <div class="price_and_logo"> 
+        <div class="price">
+            <h1>13400</h1>
+        </div>
+        <div class="flight_logo">
+            <img src="S7Logo.svg">
+        </div>
+    </div>
+<!-- первый контейнер с рейсами -->
+<div class="one_flight">
+<!-- БЛОК ОТКУДА КУДА -->
+    <div class="box_a-b">
+        <div class="a-b first_line">   
+            <span>mow-hkt</span>
+        </div>
+        <div class="a-b_time second_line">
+            <span >10:45-08:00</span>
+        </div>
+    </div>
+<!-- ВРЕМЯ ПУТИ-->
+    <div class="box_way">
+        <div class="way first_line">   
+            <span>в пути</span>
+        </div>
+        <div class="way_time second_line">
+            <span >21ч 15м</span>
+        </div>
+    </div>
+<!-- ПЕРЕСАДКИ  -->
+    <div class="box_transplants">
+        <div class="transplants first_line">   
+            <span>2 пересадки</span>
+        </div>
+        <div class="transplants_time second_line">
+            <span >HKG,JNB</span>
+        </div>
+    </div>
+</div>
+<!-- второй контейнер с рейсами  -->
+<div class="second_flight">
+<!-- ОТКУДА ДО КУДА -->
+    <div class="box_a-b">
+        <div class="a-b first_line">   
+            <span>mow-hkt</span>
+        </div>
+        <div class="a-b_time second_line">
+            <span >11:20-00:50</span>
+        </div>
+    </div>
+<!-- ВРЕМЯ ПУТИ-->
+    <div class="box_way">
+        <div class="way first_line">   
+            <span>в пути</span>
+        </div>
+        <div class="way_time second_line">
+            <span >13ч 30м</span>
+        </div>
+    </div>
+<!-- ПЕРЕСАДКИ  -->
+    <div class="box_transplants">
+        <div class="transplants first_line">   
+            <span>1 пересадки</span>
+        </div>
+        <div class="transplants_time second_line">
+            <span >HKG</span>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="box_flight">
+    <div class="price_and_logo"> 
+        <div class="price">
+            <h1>13400</h1>
+        </div>
+        <div class="flight_logo">
+            <img src="S7Logo.svg">
+        </div>
+    </div>
+<!-- первый контейнер с рейсами -->
+<div class="one_flight">
+<!-- БЛОК ОТКУДА КУДА -->
+    <div class="box_a-b">
+        <div class="a-b first_line">   
+            <span>mow-hkt</span>
+        </div>
+        <div class="a-b_time second_line">
+            <span >10:45-08:00</span>
+        </div>
+    </div>
+<!-- ВРЕМЯ ПУТИ-->
+    <div class="box_way">
+        <div class="way first_line">   
+            <span>в пути</span>
+        </div>
+        <div class="way_time second_line">
+            <span >21ч 15м</span>
+        </div>
+    </div>
+<!-- ПЕРЕСАДКИ  -->
+    <div class="box_transplants">
+        <div class="transplants first_line">   
+            <span>2 пересадки</span>
+        </div>
+        <div class="transplants_time second_line">
+            <span >HKG,JNB</span>
+        </div>
+    </div>
+</div>
+<!-- второй контейнер с рейсами  -->
+<div class="second_flight">
+<!-- ОТКУДА ДО КУДА -->
+    <div class="box_a-b">
+        <div class="a-b first_line">   
+            <span>mow-hkt</span>
+        </div>
+        <div class="a-b_time second_line">
+            <span >11:20-00:50</span>
+        </div>
+    </div>
+<!-- ВРЕМЯ ПУТИ-->
+    <div class="box_way">
+        <div class="way first_line">   
+            <span>в пути</span>
+        </div>
+        <div class="way_time second_line">
+            <span >13ч 30м</span>
+        </div>
+    </div>
+<!-- ПЕРЕСАДКИ  -->
+    <div class="box_transplants">
+        <div class="transplants first_line">   
+            <span>1 пересадки</span>
+        </div>
+        <div class="transplants_time second_line">
+            <span >HKG</span>
+        </div>
+    </div>
+</div>
+</div>
+<!-- КНОПКА ЕЩЕ -->
+<button class=" btn_add">показать еще 5 билетов!</button>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

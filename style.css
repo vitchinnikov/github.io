@@ -1,0 +1,243 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #4A4A4A;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+
+/* КОНТЕЙНЕР */
+.container{
+    margin: 0 auto;
+    text-align: center;
+    width: 750px;
+    height: 100%;
+}
+/* ПОЗИЦИОНИРОВАНИЕ КОНТЕЙНТА САЙТА  */
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/* БЛОК С КОЛЛИЧЕСТВОМ ПЕРЕСАДОК */
+.filter_transplants{
+    color: #4A4A4A;
+    width: 232px;
+    height: 256px;
+    background-color:#fff;
+    border-radius: 10px; 
+    text-align: left;
+    position: relative;
+    box-shadow: 0 0 20px #c3c3c367;
+}
+/* ЗАГОЛОВОК */
+.filter_h3{
+text-transform: uppercase;
+font-size: 13px;
+position: absolute;
+top: 0px;
+left: 20px;
+}
+/* КОНТЕЙНЕР С CHECKBOX */
+.conteiner_box_checkbox{
+    padding-top: 60px;
+}
+/* БЛОКИ С CHECKBOX */
+.box_checkbox{
+    display: flex;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    padding-left: 30px;
+}    
+/* ВСЕ ПЕРЕСАДКИ  */
+#checkbox_all{
+    appearance: none;
+    -webkit-appearance: none;
+}
+/* БЕЗ ПЕРЕСАДОК */
+#checkbox_without{
+    appearance: none;
+    -webkit-appearance: none;
+}
+/* ОДНА ПЕРЕСАДКА */
+#checkbox_one{
+    appearance: none;
+    -webkit-appearance: none;
+}
+/* ДВЕ ПЕРЕСАДКИ */
+#checkbox_two{
+    appearance: none;
+    -webkit-appearance: none;
+}
+/* ТРИ ПЕРЕСАДКИ */
+#checkbox_three{
+    appearance: none;
+    -webkit-appearance: none;
+}
+/* ДЕЛАЕМ ГАЛОЧКИ  */
+.checkbox_label{
+    cursor: pointer;
+}
+.checkbox_label::before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #2196F3;
+    background-color: #fff;
+    position: absolute;
+    top:-2px;
+    border-radius: 2px;
+    left:7px;
+    transition: border-color .1s linear;
+    z-index: 1;
+}
+.checkbox_label::after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(Shape.png) no-repeat;
+    background-size: 12px 8px;
+    position: absolute;
+    top: 4px;
+    left: 11px;
+    margin: 0px auto;
+    opacity: 1;
+    z-index: 2;
+    transition:opacity .1s linear;
+    cursor: pointer;
+}
+.checkbox_input:checked + .checkbox_label::after{
+    opacity: 0;
+}
+.checkbox_input:checked + .checkbox_label::before{
+    border-color:  #9ABBCE ;
+}
+/* ФИЛЬТРЫ РЕЙСОВ */
+.filter_menu{
+    display: flex;
+}
+.radio_buttons {
+    text-align: center;
+}
+
+.custom_radio input {
+    display: none;
+}
+.radio_line {
+    padding-top: 16px;
+    text-transform: uppercase;
+}
+/* СТИЛИ КНОПОК */
+.radio_btn {
+    width: 168px;
+    height: 50px;
+    border: 1px solid #DFE5EC;
+    background-color: #fff;  
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px; 
+    font-weight: bold;
+}
+
+.radio_line {
+    padding-top: 16px;
+    text-transform: uppercase;
+}
+/* КНОПКА САМЫЙ ДЕШЕВЫЙ */
+.radio_btn_cheap{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/* КНОПКА САМЫЙ БЫСТРЫЙ */
+.radio_btn_fast{
+    border-left: 0px;
+    border-right: 0px;
+}
+/* КНОПКА ОПТИМАЛЬНЫЙ */
+.radio_btn_optimal{
+border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
+}
+/* БЛОК С ТЕКСТОМ КНОПОК */
+.radio_line {
+    padding-top: 16px;
+    text-transform: uppercase;
+}
+.custom_radio input:checked + .radio_btn {
+    border: 1px solid #2196F3;
+    background-color: #2196F3;
+    color: #fff;
+}
+/* БЛОК РЕЙС*/
+.box_flight{
+    border: 0px;
+    width: 510px;
+    height: 184px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+/* ЦЕНА И ЛОГО */
+.price_and_logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+/* ЦЕНА*/
+.price>h1{
+font-size: 24px;
+margin: 0 auto;
+color: #2196F3;
+}
+/*  КОНТЕЙНЕР С ПЕРВЫМ РЕЙСОМ  */
+.one_flight{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+/* ПЕРВАЯ СТРОКА В РЕЙСЕ */
+.first_line{
+    text-transform: uppercase;
+    color: #A0B0B9;
+
+}
+/* ВТОРАЯ СТРОКА В РЕЙСЕ */
+.second_line{
+    font-size: 14px;
+    color: #4A4A4A;
+    font-weight: bold;
+}
+/* БЛОКИ С ОПИСАНИЕМИ РЕЙСОВ  */
+.box_a-b,.box_way,.box_transplants{
+    display: inline-block;
+    width: 141px;
+    height: 39px;
+    text-align: left;
+}
+/* КОНТЕЙНЕР СО ВТОРЫМ РЕЙСОМ  */
+.second_flight{
+display: flex;
+justify-content: space-between;
+padding: 0px 20px;
+margin: 10px 0px;
+}
+/* КНОПКА ДОБАВИТЬ ЕЩЕ */
+.btn_add{
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+    background-color: #2196F3;
+    width: 510px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
